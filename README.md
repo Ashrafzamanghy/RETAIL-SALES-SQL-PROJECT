@@ -43,7 +43,7 @@ CREATE TABLE retail_sales
 ### 2. Data Exploration & Cleaning
 
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
-- **DELETE NULL VALUE**: Determine the total number of records in the dataset.
+- **Delete Null Value**: Determine the total number of records in the dataset.
 
 
 ```sql
