@@ -70,6 +70,7 @@ where
      cogs is null
      or 
      total_sale is null;
+```
 
 ```sql
 DELETE FROMf retail_sales
@@ -95,6 +96,7 @@ where
      cogs is null
      or 
      total_sale is null;
+```
 
 
 
