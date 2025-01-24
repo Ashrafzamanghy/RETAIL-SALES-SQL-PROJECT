@@ -42,16 +42,11 @@ CREATE TABLE retail_sales
 
 ### 2. Data Exploration & Cleaning
 
-- **Record Count**: Determine the total number of records in the dataset.
-- **Customer Count**: Find out how many unique customers are in the dataset.
-- **Category Count**: Identify all unique product categories in the dataset.
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
+- **DELETE NULL VALUE**: Determine the total number of records in the dataset.
+
 
 ```sql
-SELECT COUNT(*) FROM retail_sales;
-SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
-SELECT DISTINCT category FROM retail_sales;
-
 select count(*) from retail_sales
 where 
      transactions_id is null
@@ -76,7 +71,7 @@ where
      or 
      total_sale is null;
 
-
+```sql
 DELETE FROMf retail_sales
 where 
      transactions_id is null
@@ -100,12 +95,14 @@ where
      cogs is null
      or 
      total_sale is null;
-;
-```
 
-### 3. Data Analysis & Findings
+
+
+
+### 2.Data Analysis and insights on key problems and solution
 
 The following SQL queries were developed to answer specific business questions:
+
 
 1. **How many sales we have achieved.**:
 ```sql
@@ -233,4 +230,4 @@ order by sum(total_sale) desc;
 
 - **Sales Summary**: A detailed report summarizing total sales, customer demographics, and category performance.
 - **Trend Analysis**: Insights into sales trends across different months and shifts.
-- **Customer Insights**: Reports on top customers and unique customer counts per category.
+- **Customer Insights**: Reports on top customers.
